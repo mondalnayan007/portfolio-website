@@ -87,7 +87,7 @@ header{
 .about{
     background-color: white;
     padding: 10px;
-    border: 1px solid black;
+    
 }
 .about h3{
     font-size: 35px;
@@ -192,4 +192,35 @@ footer input[type="text"],footer input[type="email"] ,footer textarea{
     padding: 10px 20px;
     margin-bottom: 24px;
     border: none;
+}
+
+
+
+
+/* Responsive design */
+
+@media screen and (max-width:576px){
+    
+    .menu ul,.navbar,.skills,.resume-container,.lower,.hero{
+        flex-direction: column;
+    }
+    header{
+        background-image: none;
+    }
+    .hero img{
+        width: 100%;
+    }
+    footer,.about-section{
+        padding: 20px;
+    }
+    .about-section,.skill,.hero,.skills{
+        margin: 40px;
+    }
+    .footer-section{
+        flex-direction: column;
+    }
+    .footer-column{
+        width: 100%;
+    }
+
 }
